@@ -34,9 +34,9 @@ const App = () => {
           <Route path="/" element={
           <>
           <Specials/>
-          <Main/> 
           <SplitImages/> 
           <About/>
+          <Main />
           <SavoryCollage/>
           <ComeDown/>
           <SweetCollage/>

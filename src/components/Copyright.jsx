@@ -7,7 +7,7 @@ const Copyright = () => {
 
   return (
     <div>
-        <p>Copyright © {date} The Aldgate Chip Shop. All rights reserved | <NavLink to="/privacy">Privacy Policy</NavLink></p>
+        <p>Copyright © {date} The Aldgate Chip Shop. All rights reserved | <NavLink style={{textDecoration: "none", color: "#97b34e", textShadow: "1px 1px #fff" }}to="/privacy">Privacy Policy</NavLink></p>
     </div>
   )
 }

@@ -1,7 +1,7 @@
 import React from 'react'
-import collage1 from '../assets/collage1.png'
+import collage1 from '../assets/collage-1.png'
 import collage2 from '../assets/collage2.png'
-import collage3 from '../assets/collage-3.jpg'
+import collage3 from '../assets/collage3.jpg'
 
 const SplitImages = () => {
   return (

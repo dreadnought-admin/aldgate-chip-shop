@@ -8,7 +8,7 @@ const Header = () => {
 
     const location = useLocation();
     const current = new Date();
-    const date = `${current.getMonth()+1}//${current.getDate()}//${current.getFullYear()}`;
+    const date = `${current.getMonth()+1} // ${current.getDate()} // ${current.getFullYear()}`;
 
   return (
     <div className="navigation">
