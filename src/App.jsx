@@ -15,6 +15,9 @@ import Footer from './components/Footer'
 import Copyright from './components/Copyright'
 import PrivacyPolicy from './components/PrivacyPolicy'
 import SplitImages from './components/SplitImages'
+import SweetCollage from './components/SweetCollage'
+import SavoryCollage from './components/SavoryCollage'
+import ComeDown from './components/ComeDown'
 
 
 const App = () => {
@@ -27,8 +30,19 @@ const App = () => {
         <Header />
 
         <Routes>
-          <Route path="/" element={<><Specials/><Main/> <SplitImages/></>}/>
-          <Route path="/about" element={<About />}/>
+
+          <Route path="/" element={
+          <>
+          <Specials/>
+          <Main/> 
+          <SplitImages/> 
+          <About/>
+          <SavoryCollage/>
+          <ComeDown/>
+          <SweetCollage/>
+          </>}
+          />
+
           <Route path="/contact" element={<ContactForm />}/>
           <Route path="/privacy" element={<PrivacyPolicy/>}></Route>
         </Routes>

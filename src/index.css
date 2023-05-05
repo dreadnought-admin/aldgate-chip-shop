@@ -21,6 +21,8 @@ font-family: 'Vina Sans', cursive; */
 		-webkit-tap-highlight-color: transparent;
 }
 
+/* for header buttons */
+
 .navButton {
   color: var(--white);
   text-decoration: none;
@@ -28,6 +30,8 @@ font-family: 'Vina Sans', cursive; */
   float: right;
   font-size: 22px;
 }
+
+/* specials section */
 
 .specials > div > img {
   display: flex;
@@ -62,6 +66,71 @@ font-family: 'Vina Sans', cursive; */
 
 .specials-text-price > h2 {
   transform: rotate(-8deg)
+}
+
+/* about section */
+
+.about {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+}
+
+.about-txt {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  border: 1px red solid;
+  margin: 10rem;
+  width: 50%;
+}
+
+.about-img {
+  display: flex;
+  border: 3px purple solid;
+  width: 50%;
+}
+
+.about-img > img {
+  max-height: 800px;
+  max-width: 650px;
+  margin: 0 auto;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  border-radius: 3px;
+  
+}
+
+/* come down & metallica logo */
+
+.come-down {
+  display: flex;
+  flex-direction: column;
+  column-count: 1;
+  border: 1px green solid;
+  width: 100;
+  justify-content: center;
+  align-items: center;
+}
+
+.come-down-content > img {
+  margin: 2rem 2rem 0 4.5rem;
+  border: 1px red solid;
+}
+
+.come-down-content > h1 {
+  border: 1px blue solid;
+}
+
+/* large collages */
+
+.large-collage {
+  width: 100%;
+  margin: 0 auto;
+}
+
+.large-collage > img {
+  max-width: 100%;
 }
 
 /* footer */

@@ -17,9 +17,6 @@ const Footer = () => {
         <div className="footer-column">
             <h3>Contact</h3>
             <p><strong>Phone:</strong> +61 8 8339 1367</p>
-            <p>Boo boo boo</p>
-            <p>Boo boo boo</p>
-            <p>Boo boo boo</p>
         </div>
 
 
