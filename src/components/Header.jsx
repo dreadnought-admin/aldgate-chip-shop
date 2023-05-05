@@ -1,6 +1,8 @@
 import React from 'react'
 import { NavLink, useLocation } from 'react-router-dom'
 import logo from '../assets/removedbg-logo.png'
+import * as Scroll from 'react-scroll'
+import { Link, Button, Element, Events, animateScroll as scroll, scrollSpy, scroller } from 'react-scroll'
 
 const Header = () => {
 
@@ -17,7 +19,10 @@ const Header = () => {
                 {location.pathname !=="/" &&
                     <NavLink className="navButton confirm_selection" to="/">Home</NavLink>
                 }
-                <NavLink className="navButton confirm_selection" to="/showcase">Contact</NavLink>
+                {/* <Link activeClass="active" to="contact" spy={true}
+                offset={-100}
+                duration={500}className="navButton confirm_selection">Contact</Link> */}
+                <NavLink className="navButton confirm_selection" to="/contact">Contact</NavLink>
         </div>
     </div>
   )
