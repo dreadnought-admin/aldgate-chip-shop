@@ -1,8 +1,5 @@
 import React, { useState, useEffect, useContext } from 'react'
 import { Route, Routes } from 'react-router-dom'
-import * as Scroll from 'react-scroll'
-import { Link, Button, Element, Events, animateScroll as scroll, scrollSpy, scroller } from 'react-scroll'
-import axios from 'axios'
 
 import Header from './components/Header'
 import Main from './components/Main'
