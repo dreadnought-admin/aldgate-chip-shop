@@ -1,5 +1,4 @@
 import React from 'react'
-import transparentChicken from '../assets/transparentchicken.png'
 import bucket from '../assets/chickenbucket.gif'
 
 const Specials = () => {
