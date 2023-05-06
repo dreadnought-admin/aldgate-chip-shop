@@ -120,7 +120,7 @@ body {
 
 .specials-txt-container > h1 {
   text-shadow: 2px 2px var(--puff-yellow);
-  transform: rotate(-8deg)
+  transform: rotate(-8deg);
 }
 
 .specials-txt-container > h1:hover {
@@ -129,7 +129,8 @@ body {
 
 .specials-txt-price > h2 {
   text-shadow: 2px 2px var(--puff-orange);
-  transform: rotate(-8deg)
+  transform: rotate(-8deg);
+  text-decoration-line: underline;
 }
 
 /* main section && section that says 'burgers, briskets, brekkie' etc */
@@ -342,6 +343,9 @@ img {
   margin: 0 auto;
   margin-top: 8rem;
   margin-bottom: 10rem;
+  border-top: 5px solid var(--puff-green);
+  border-bottom: 5px solid var(--puff-green);
+  padding: 2.5rem;
 }
 
 .main-btn {
