@@ -10,9 +10,11 @@ const Main = () => {
   return (
     <div className="btn-row">
       <div>
+      <a target="_blank" href="https://www.instagram.com/thealdgatechipshop/">
        <button className="main-btn hover misc-btn">
           <FontAwesomeIcon className="social-btn" icon="fa-brands fa-instagram"/>
        </button>
+      </a>
       </div>
 
       <div>
@@ -24,9 +26,11 @@ const Main = () => {
       </div>
 
       <div>
+      <a target="_blank" href="https://www.facebook.com/theAldgateChipShop">
        <button className="main-btn hover misc-btn"> 
           <FontAwesomeIcon className="social-btn" icon="fa-brands fa-facebook" />
        </button>
+      </a>
       </div>
     </div>
   )
