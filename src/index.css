@@ -67,6 +67,15 @@ body {
   font-size: 22px;
 }
 
+.dateButton {
+  color: var(--puff-white);
+  text-shadow: 1px 1px whitesmoke;
+  text-decoration: none;
+  margin: 2em 1rem .5em 3rem;
+  float: right;
+  font-size: 22px;
+}
+
 .navButton:hover {
   text-shadow: 0 0 5px var(--puff-yellow);
 }
@@ -392,9 +401,72 @@ img {
 
 /* contact form test */
 
+div.ContactForm {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  flex-direction: row;
+  align-items: left;
+  justify-content: center;
+  align-content: left;
+}
+
+.contact-img {
+  max-height: 400px;
+  max-width: 450px;
+  display: flex;
+  float: right;
+  margin: 8.5rem 2rem 0 2rem;
+  border: 3px solid var(--puff-green);
+}
+
+.fade-in {
+  animation: fadeIn ease 5s;
+  -webkit-animation: fadeIn ease 5s;
+  -moz-animation: fadeIn ease 5s;
+  -o-animation: fadeIn ease 5s;
+  -ms-animation: fadeIn ease 5s;
+}
+@keyframes fadeIn {
+  0% {opacity:0;}
+  100% {opacity:1;}
+}
+
+@-moz-keyframes fadeIn {
+  0% {opacity:0;}
+  100% {opacity:1;}
+}
+
+@-webkit-keyframes fadeIn {
+  0% {opacity:0;}
+  100% {opacity:1;}
+}
+
+@-o-keyframes fadeIn {
+  0% {opacity:0;}
+  100% {opacity:1;}
+}
+
+@-ms-keyframes fadeIn {
+  0% {opacity:0;}
+  100% {opacity:1;}
+}
+
+.contactForm > h1 {
+  text-align: center;
+  font-size: 35px;
+  text-shadow: 1px 1px var(--puff-white);
+}
+
 form {
   margin-top: 20px;
   background: var(--puff-yellow);
+
+  text-align: center;
+  border-radius: 10px;
+  box-shadow: 0 0 5px 0 hsl(0, 0%, 74%);
+  padding: 20px;
+  
 }
 
 .formRow {
@@ -409,6 +481,7 @@ form {
   border: none;
   color: var(--puff-green);
   text-shadow: 1px 1px var(--puff-white);
+  
 }
 
 .formInput:focus {
@@ -430,9 +503,16 @@ form {
 
 .errorMessage {
   color: var(--puff-orange);
-  font-size: 14px;
-  margin: 0;
+  font-family: "Kneswaves", cursive;
+  font-style: italic;
+  font-size: 15px;
+  margin: 5px;
   padding: 0;
+  text-decoration: underline;
+  text-shadow: .25px .25px #5a473e;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 #notifyToast {
@@ -445,16 +525,20 @@ form {
 
 .submit-btn {
   background-color: var(--puff-brown);
+  font-family: "Knewaves", cursive;
+  font-size: 15px;
   color: var(--puff-green) !important;
   padding: 15px 50px;
   border: 2px solid var(--puff-green);
+  transition: all 0.3s ease;
+  box-shadow: 0 0 5px 0 hsl(0, 0%, 74%);
   border-radius: 10px;
   margin-bottom: 25px;
 }
 
 .submit-btn:hover {
   background-color: var(--puff-green);
-  color: var(--puff-brown) !important;
+  color: var(--puff-white) !important;
   border: 2px solid var(--puff-green);
 }
 
@@ -462,6 +546,17 @@ form {
   background-color: var(--puff-brown);
   color: var(--puff-green) !important;
   cursor: wait;
+}
+
+input {
+  width: 300px;
+  max-width: 600px;
+}
+
+textarea {
+  width: 300px;
+  max-width: 600px;
+  max-height: 600px;
 }
 
 @media (max-width: 768px) {
@@ -472,12 +567,3 @@ form {
 }
 
 
-root {
-  font-family: 'Rock Salt', cursive;
-  --puff-white: #eedbc8;
-  --puff-yellow: #e0bb68;
-  --puff-green: #97b34e;
-  --puff-orange: #d58353;
-  --puff-teal: #548b71;
-  --puff-brown: #5a473e;
-}

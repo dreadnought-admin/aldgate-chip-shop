@@ -2,7 +2,8 @@ import { useState } from 'react';
 import { useForm } from 'react-hook-form';
 import axios from 'axios';
 import { ToastContainer, toast } from 'react-toastify';
-import 'react-toastify/dist/ReactToastify.min.css';
+
+import elishia from "../assets/elishia.jpg"
 
 const ContactForm = () => {
 
@@ -46,7 +47,6 @@ const ContactForm = () => {
         { headers: {'Accept': 'application/json'}})
         .then(response => console.log(response))
         .catch(error => console.log(error))
-        
         reset();
         toastifySuccess();
         setDisabled(false);
@@ -59,6 +59,7 @@ const ContactForm = () => {
           <div className='row'>
             <div className='col-12 text-center'>
               <div className='contactForm'>
+                <h1>Contact Us! 💌🤘🏼</h1> 
                 <form id='contact-form' noValidate onSubmit={handleSubmit(onSubmit)} method="POST">
                   {/* Row 1 of form */}
                   <div className='row formRow'>
@@ -80,6 +81,7 @@ const ContactForm = () => {
                     </div>
                     <div className='col-6'>
                       <input
+                        columns={6}
                         type='email'
                         name='email'
                         {...register('email', {
@@ -97,7 +99,8 @@ const ContactForm = () => {
                   <div className='row formRow'>
                     <div className='col'>
                       <textarea
-                        rows={3}
+                        rows={5}
+                        columns={40}
                         name='message'
                         {...register('message', {
                             required: true
@@ -114,9 +117,11 @@ const ContactForm = () => {
                 </form>
               </div>
               <ToastContainer />
+              
             </div>
           </div>
         </div>
+        <img className="contact-img fade-in" src={elishia}/>
       </div>
     );
   };
