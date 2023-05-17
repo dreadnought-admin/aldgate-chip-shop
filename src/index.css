@@ -8,7 +8,6 @@
   --puff-orange: #d58353;
   --puff-teal: #548b71;
   --puff-brown: #5a473e;
-
 }
 
 body {
@@ -389,4 +388,96 @@ img {
 .privacy > section > p {
   font-family: 'Knewave', cursive;
   text-shadow: 1px 1px var(--puff-yellow);
+}
+
+/* contact form test */
+
+form {
+  margin-top: 20px;
+  background: var(--puff-yellow);
+}
+
+.formRow {
+  margin: 10px 0 20px 0;
+}
+
+.formInput {
+  padding: 15px 10px;
+  font-family: 'Knewave', cursive;
+  background-color: var(--puff-white);
+  box-shadow: 0 0 0 2px var(--puff-green);
+  border: none;
+  color: var(--puff-green);
+  text-shadow: 1px 1px var(--puff-white);
+}
+
+.formInput:focus {
+  background-color: var(--puff-white);
+  outline: none;
+  box-shadow: 0 0 0 2px var(--puff-green);
+  color: var(--puff-brown);
+}
+
+.formInput::placeholder {
+  color: var(--puff-teal);
+  opacity: 1;
+}
+
+.formInput:focus::placeholder {
+  color: var(--puff-teal);
+  opacity: 1;
+}
+
+.errorMessage {
+  color: var(--puff-orange);
+  font-size: 14px;
+  margin: 0;
+  padding: 0;
+}
+
+#notifyToast {
+  color: #fff;
+  border-radius: 6px;
+  width: 200px;
+  margin-left: 75px;
+  background-color: var(--puff-green);
+}
+
+.submit-btn {
+  background-color: var(--puff-brown);
+  color: var(--puff-green) !important;
+  padding: 15px 50px;
+  border: 2px solid var(--puff-green);
+  border-radius: 10px;
+  margin-bottom: 25px;
+}
+
+.submit-btn:hover {
+  background-color: var(--puff-green);
+  color: var(--puff-brown) !important;
+  border: 2px solid var(--puff-green);
+}
+
+.submit-btn:disabled:hover {
+  background-color: var(--puff-brown);
+  color: var(--puff-green) !important;
+  cursor: wait;
+}
+
+@media (max-width: 768px) {
+  .submit-message {
+    width: 125px;
+    margin-left: 200px;
+  }
+}
+
+
+root {
+  font-family: 'Rock Salt', cursive;
+  --puff-white: #eedbc8;
+  --puff-yellow: #e0bb68;
+  --puff-green: #97b34e;
+  --puff-orange: #d58353;
+  --puff-teal: #548b71;
+  --puff-brown: #5a473e;
 }
