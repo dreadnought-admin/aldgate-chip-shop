@@ -250,6 +250,10 @@ body {
   background-color: var(--puff-brown);
 }
 
+.come-down-content > h1 {
+  text-shadow: 3px 3px #e0bb68;
+}
+
 .come-down-content > img {
   margin: 2rem 2rem 0 4.5rem;
 }
@@ -559,11 +563,294 @@ textarea {
   max-height: 600px;
 }
 
+/* responsive */
+
 @media (max-width: 768px) {
   .submit-message {
     width: 125px;
     margin-left: 200px;
   }
 }
+
+@media screen and (min-width: 1020px) {
+
+}
+
+
+@media screen and (max-width: 915px) {
+
+  html, body {
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+  /* for header / nav bar */
+  .navigation {
+    float: none;
+    display: block;
+    text-align: left;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
+
+  .navigation > div > .navButton {
+    float: none;
+    display: flex;
+    flex-direction: column; 
+  }
+
+  .navigation > div > .dateButton {
+    float: none;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .logo {
+    border: 1px solid red;
+    margin: 0 3rem 0 3rem;
+  }
+
+  .navButton {
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .dateButton {
+    justify-content: center;
+    align-items: center;
+  }
+
+  /* for specials image and text */
+
+  .specials > div > img {
+    max-width: 150px;
+    max-height: 150px;
+    display: block;
+    margin-left: 0;
+    margin-right: 300px;
+    width: 100%;
+  }
+  
+  .specials {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    column-count: 1;
+    margin-bottom: 5rem;
+  }
+  
+  .specials-txt-container {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    max-width: 100%;
+    margin: 0 auto;
+    text-align: center;
+    font-size: 20px;
+  }
+  
+  .specials-txt-price > h2 {
+    text-shadow: 2px 2px var(--puff-orange);
+    transform: rotate(-8deg);
+    text-decoration-line: underline;
+  }
+
+  /* for first collage */
+  .collage-container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .collage > img {
+    max-width: 25rem;
+    height: 35rem;
+    max-height: 35rem;
+    margin: 0 auto;
+    margin-left: 1rem;
+    transition: all 300ms ease-out;
+  }
+  
+  .collage > img:hover {
+    transition: all 300ms ease-in-out;
+    transform: scale(1.05);
+    opacity: 1;
+    border-radius: 2px;
+  }
+
+  /* about section */
+
+  .about {
+    display: block;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+  }
+  
+  .about-txt {
+    column-count: 1;
+    text-align: center;
+    margin: 0 auto;
+    width: 16rem;
+    padding: 1rem;
+    border: 5px solid var(--puff-green);
+  }
+  
+  .about-txt > h2 {
+    font-size: 15px;
+    text-shadow: 2px 2px var(--puff-yellow);
+  }
+  
+  .about-txt > p {
+    font-size: 12px;
+    font-family: 'Knewave', cursive;
+    text-shadow: 1px 1px whitesmoke;
+  }
+
+  .about-img {
+    width: 100%;
+  }
+  
+  .about-img > img {
+    max-width: 100%;
+    height: 35rem;
+    max-height: 35rem;
+    margin: 3rem 0 2rem 0;
+    border: 5px solid var(--puff-brown);
+    border-radius: 3px;
+  }
+  
+  /* social media && menu button bar */
+
+  .btn-row {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: left;
+    float: left;
+    width: 100%;
+    margin: 0 auto;
+    margin-bottom: 1.5rem;
+    border-top: 5px solid var(--puff-green);
+    border-bottom: 5px solid var(--puff-green);
+    padding: 1rem;
+  }
+  
+  .main-btn {
+    padding: 1.5rem;
+    margin: .25rem;
+    background-color: var(--puff-brown);
+    border: 5px solid var(--puff-teal);
+    border-radius: 4px;
+  }
+  
+  .main-btn > h2 {
+    font-size: 15px;
+    font-family: 'Rock Salt', cursive;
+    text-shadow: 1px 1px var(--puff-teal);
+  }
+  
+  .social-btn {
+    height: 2rem;
+    max-height: 2rem;
+  }
+
+  /* second collage // large collage */
+
+  .large-collage {
+    width: 100%;
+    margin: 0 auto;
+  }
+  .large-collage > img {
+    max-width: 100%;
+  }
+
+  /* aldgate chip shop */
+
+  .come-down {
+    display: flex;
+    flex-direction: column;
+    column-count: 1;
+    width: 100;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    background-color: var(--puff-brown);
+    margin-bottom: 1rem;
+  }
+
+  .come-down-content > h1 {
+    font-size: 15px;
+    text-shadow: 1px 1px#e0bb68;
+    width: 50%;
+    margin: 0 auto;
+    text-align: center;
+    align-items: center;
+    
+  }
+  
+  .come-down-content > img {
+    margin: 0 auto;
+    max-width: 100%;
+  }
+
+
+  /* footer */
+
+  .footer {
+    display: block;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 100%;
+    font-size: .85rem;
+    margin-top: 2rem;
+    background-color: var(--puff-brown);
+    border-top: 5px solid var(--puff-green);
+  }
+  
+  .footer-column {
+    float: left;
+    width: 100%;
+  }
+  
+  .footer-column > h3 {
+    color: var(--puff-green);
+    text-shadow: 1px 1px var(--puff-teal);
+  }
+  
+  .footer-column > p {
+    margin-top: -18px;
+    font-family: 'Knewave', cursive;
+    color: var(--puff-white);
+  }
+  
+  .footer:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+
+  /* copyright */
+
+  .copyright {
+    font-weight: bold;
+    font-size: 10px;
+    text-align: center;
+  }
+  
+}
+
+
+
 
 

@@ -16,7 +16,7 @@ const Header = () => {
           </Link>
             
         
-            <p className="dateButton" href="#">{date}</p>
+            <p className="dateButton">{date}</p>
                 {location.pathname !=="/" &&
                     <NavLink className="navButton confirm_selection" to="/">Home</NavLink>
                 }
