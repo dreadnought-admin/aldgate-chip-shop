@@ -880,7 +880,7 @@ textarea {
     flex-direction: row;
     align-items: center;
     justify-content: center;
-    float: left;
+    float: none;
     width: 100%;
     margin: 0 auto;
     margin-bottom: 1.5rem;
@@ -891,7 +891,7 @@ textarea {
   
   .main-btn {
     padding: 1.5rem;
-    margin: .25rem;
+    margin-right: 2rem;
     background-color: var(--puff-brown);
     border: 5px solid var(--puff-teal);
     border-radius: 4px;
