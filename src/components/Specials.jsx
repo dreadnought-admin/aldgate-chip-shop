@@ -12,6 +12,8 @@ const Specials = () => {
             <h1>Whole Hot Chicken 🐔</h1>
             <div className="specials-txt-price">
                 <h2>Only $13</h2>
+                <h3>Call Now to Order Yours!</h3>
+                <p>+61 8-8339-1367</p>
             </div>
         </div>
     </div>

@@ -143,6 +143,12 @@ body {
   text-decoration-line: underline;
 }
 
+.specials-txt-price > p {
+  color: var(--puff-green);
+  text-shadow: 2px 2px var(--puff-brown);
+  text-decoration-line: underline;
+}
+
 /* main section && section that says 'burgers, briskets, brekkie' etc */
 
 .main {
@@ -662,20 +668,10 @@ textarea {
   text-shadow: 1px 1px whitesmoke;
 }
 
-.about-img {
-  display: block;
-  width: 100%;
-}
 
-.about-img > img {
-  max-height: 100%;
-  max-width: 98%;
-  margin: 0 auto;
-  margin-top: 2rem;
-  margin-bottom: 2rem;
-  border: 8px solid var(--puff-brown);
-  border-radius: 3px;
-}
+
+
+
 
 
 }
@@ -1085,6 +1081,23 @@ textarea {
     width: 250px;
     max-width: 250px;
     max-height: 250px;
+  }
+}
+
+@media screen and (min-width: 1350px) {
+  .about-img {
+    display: flex;
+    width: 100%;
+  }
+  
+  .about-img > img {
+    max-height: 100%;
+    max-width: 98%;
+    margin: 0 auto;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    border: 8px solid var(--puff-brown);
+    border-radius: 3px;
   }
 }
 
